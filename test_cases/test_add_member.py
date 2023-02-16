@@ -6,7 +6,6 @@
 """
 import allure
 import pytest
-
 from pages.login_page import LoginPage
 
 
@@ -22,10 +21,11 @@ class TestAddMember:
     @pytest.mark.usefixtures('add_member')
     @pytest.mark.run(order=1)
     def test_add_member(self):
-        value = self.browser.login() \
+        member_info_list = self.browser.login() \
             .click_admin_manage() \
             .click_business_member() \
             .click_add_member() \
             .fill_in_member_info()\
-            .get_tips()
-        assert "成员添加成功!" == value
+            .get_member_info()
+        # assert "成员添加成功!" == value
+        assert "15211111111" in member_info_list[0]
