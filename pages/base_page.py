@@ -4,11 +4,9 @@
 @author: YeChen
 @time: 2023/1/13 9:21
 """
-from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 
 

@@ -4,8 +4,6 @@
 @author: YeChen
 @time: 2023/1/16 15:15
 """
-from time import sleep
-
 from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
 
